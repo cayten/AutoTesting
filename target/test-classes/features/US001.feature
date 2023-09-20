@@ -1,4 +1,5 @@
 Feature:US001
+
   Scenario: TC01
     Given kullanici "autoUrl" sayfasina gider
     Then kullnici 2 saniye bekler

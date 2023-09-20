@@ -19,8 +19,17 @@ public class AutoPage {
     @FindBy(xpath = "//*[text()='Home']")
     public WebElement home;
 
-    @FindBy(xpath = "//*[@d=\"M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z\"]")
-    public WebElement gereksiz;
+    @FindBy(xpath = "//*[@id=\"aswift_6\"]")
+    public WebElement iframe;
+
+    @FindBy(xpath = "//*[@id=\"ad_iframe\"]")
+    public WebElement iframeClose;
+
+    @FindBy(xpath = "//*[@id=\"dismiss-button\"]")
+    public WebElement carpi;
+
+    @FindBy(xpath = "//*[@id=\"dismiss-button\"]")
+    public WebElement closeButton;
 
     @FindBy(xpath = "(//*[@class=\"n2-ow\"])[2]")
     public WebElement threeButton;
@@ -30,6 +39,9 @@ public class AutoPage {
 
     @FindBy(xpath = "//*[@class=\"attachment-shop_catalog size-shop_catalog wp-post-image\"]")
     public List<WebElement> arrivalsImage;
+
+    @FindBy(xpath = "(//*[@class=\"attachment-shop_catalog size-shop_catalog wp-post-image\"])[1]")
+    public WebElement book1;
 
     @FindBy(xpath = "(//*[@class=\"attachment-shop_catalog size-shop_catalog wp-post-image\"])[2]")
     public WebElement book2;
@@ -41,8 +53,29 @@ public class AutoPage {
     public WebElement description;
 
     @FindBy(xpath = "//*[@class=\"single_add_to_cart_button button alt\"]")
-    public WebElement sepet;
+    public WebElement sepeteEkleme;
+
+    @FindBy(xpath = "//*[@class=\"amount\"]")
+    public WebElement sepetSekmesi;
 
     @FindBy(xpath = "(//*[@class=\"column\"])[1]")
     public WebElement kitapAciklamasi;
+
+    @FindBy(xpath = "//*[@class=\"attachment-shop_single size-shop_single wp-post-image\"]")
+    public WebElement resim;
+
+    @FindBy(xpath = "//*[@class=\"pp_close\"]")
+    public WebElement resimKapatma;
+
+    @FindBy(xpath = "//*[@class=\"reviews_tab\"]")
+    public WebElement reviews;
+
+    @FindBy(xpath = "(//*[@class=\"woocommerce-Price-amount amount\"])[2]")
+    public WebElement kitapFiyati;
+
+    @FindBy(xpath = "//*[@id=\"coupon_code\"]")
+    public WebElement coupanCod;
+
+    @FindBy(xpath = "(//*[@class=\"button\"])[1]")
+    public WebElement coupanCodButton;
 }
