@@ -58,6 +58,15 @@ public class AutoPage {
     @FindBy(xpath = "//*[@class=\"amount\"]")
     public WebElement sepetSekmesi;
 
+    @FindBy(xpath = "//*[@class=\"input-text qty text\"]")
+    public WebElement kitapsayisiArtirma;
+
+    @FindBy(xpath = "(//*[@class=\"button\"])[2]")
+    public WebElement updateBasket;
+
+    @FindBy(xpath = "//*[@class=\"remove\"]")
+    public WebElement sepettenSilme;
+
     @FindBy(xpath = "(//*[@class=\"column\"])[1]")
     public WebElement kitapAciklamasi;
 
@@ -78,4 +87,20 @@ public class AutoPage {
 
     @FindBy(xpath = "(//*[@class=\"button\"])[1]")
     public WebElement coupanCodButton;
+
+    @FindBy(xpath = "//*[@class=\"button wc-backward\"]")
+    public WebElement returnShop;
+
+    @FindBy(xpath = "//*[text()='Basket Totals']")
+    public WebElement basketTotals;
+
+    @FindBy(xpath = "//*[@class=\"checkout-button button alt wc-forward\"]")
+    public WebElement proceedToCheckout;
+
+
+    @FindBy(xpath = "//*[@id=\"billing_first_name\"]")
+    public WebElement firstName;
+
+    @FindBy(xpath = "//*[@id=\"payment_method_bacs\"]")
+    public WebElement direktBankTransfer;
 }
